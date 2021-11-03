@@ -1,32 +1,32 @@
 import random
 
-myChoices = ['rock', 'paper', 'scissors', 'mnms']
-botChoices = ['rock', 'paper', 'scissors']
+my_choices = ['rock', 'paper', 'scissors', 'mnms']
+bot_choices = ['rock', 'paper', 'scissors']
 
 while True:
-    myChoice = input("Enter rock, paper, or scissors > ")
+    my_choice = input("Enter rock, paper, or scissors > ")
 
-    if myChoice == 'quit':
+    if my_choice == 'quit':
         quit()
-    elif myChoice not in myChoices:
+    elif my_choice not in my_choices:
         print("You can't choose that!")
         quit()
 
-    botChoice = random.choice(botChoices)
+    bot_choice = random.choice(bot_choices)
 
-    print(f"You chose: {myChoice}")
-    print(f"The bot chose: {botChoice}")
+    print(f"You chose: {my_choice}")
+    print(f"The bot chose: {bot_choice}")
 
-    if myChoice == 'rock' and botChoice == 'scissors':
+    if my_choice == 'rock' and bot_choice == 'scissors':
         print("You won!")
-    elif myChoice == 'paper' and botChoice == 'rock':
+    elif my_choice == 'paper' and bot_choice == 'rock':
         print("You won!")
-    elif myChoice == 'scissors' and botChoice == 'paper':
+    elif my_choice == 'scissors' and bot_choice == 'paper':
         print("You won!")
-    elif myChoice == 'mnms':
+    elif my_choice == 'mnms':
         print('You won!')
         print('MnM\'s always win.')
-    elif myChoice == botChoice:
+    elif my_choice == bot_choice:
         print("A tie!")
     else:
         print("You lost :(")
